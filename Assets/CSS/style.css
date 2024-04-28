@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estructura general Layout*/
+.gridContainer{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 20% auto;
+    grid-template-rows: 20% auto 10%;
+}
+
+
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+/* HEADER */
+.hContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.hContainerDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.hContainerDos p{ 
+    font-size: large;
+}
+
+.pacifico{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+
+.karla{
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ASIDE */
+.aContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #164a41;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.aContainerDos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.aContainer h2{
+    padding: 3rem;
+}
+
+.aContainerDos ul li{
+    line-height: 3rem;
+    list-style: none;
+}
+
+.aContainerDos ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* MAIN */
+.mContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d774e;
+    padding-top: 3rem;
+}
+
+.mContainerDos{
+    text-align: center;
+    width: 90%;
+}
+
+.mContainerDos div h2{
+    color: white;
+    font-size: 3rem;
+}
+
+.mContainerGrid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    padding: 3rem;
+    gap: 5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 2rem;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card button{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* FOOTER */
+.fContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9dc88d;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.fContainer h4{
+    font-size: 2rem;
+}
+
+.fContainerDos i{
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
